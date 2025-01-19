@@ -12,12 +12,41 @@ export default function Signup() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
-  const [error, setError] = useState('')
+  const [error, setError] = useState<string>('') // Type for error state
+  const [passwordError, setPasswordError] = useState<string>('') // Password validation error state
+  const [confirmPasswordError, setConfirmPasswordError] = useState<string>('') // Confirm password validation error state
   const { signup } = useAuth()
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setError('')
+    if (password.length < 8) {
+      setError('Password must be at least 8 characters long.')
+    }
+    if (!/[A-Z]/.test(password)) {
+      setError('Password must contain at least one uppercase letter.')
+    }
+    if (!/[a-z]/.test(password)) {
+      setError('Password must contain at least one lowercase letter.')
+    }
+    if (!/[0-9]/.test(password)) {
+      setError('Password must contain at least one number.')
+    }
+    if (!/[!@#$%^&*()_+={}|;:,.<>?~]/.test(password)) {
+      setError('Password must contain at least one special character.')
+    }
+    
+
+    // Check if the fields are empty or invalid
+    if (!email) {
+      setError('The Email field is required')
+      return
+    }
+
+    if (!password || passwordError) {
+      setError('Please fix the password error(s)')
+      return
+    }
 
     if (password !== confirmPassword) {
       setError('Passwords do not match')
@@ -26,9 +55,12 @@ export default function Signup() {
 
     const success = await signup(email, password)
     if (!success) {
-      setError('Failed to create account')
+      setError('Failed to create account') // Handle signup failure
     }
   }
+
+
+
 
   return (
     <Card className="w-full max-w-md mx-auto">
