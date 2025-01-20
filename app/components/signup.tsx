@@ -14,7 +14,6 @@ export default function Signup() {
   const [confirmPassword, setConfirmPassword] = useState('')
   const [error, setError] = useState<string>('') // Type for error state
   const [passwordError, setPasswordError] = useState<string>('') // Password validation error state
-  const [confirmPasswordError, setConfirmPasswordError] = useState<string>('') // Confirm password validation error state
   const { signup } = useAuth()
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -48,7 +47,7 @@ export default function Signup() {
       return
     }
 
-    if (password !== confirmPassword) {
+    if (password != confirmPassword) {
       setError('Passwords do not match')
       return
     }
@@ -91,7 +90,10 @@ export default function Signup() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-            />
+            />The password must have at least 8 characters, 
+            at least 1 digit(s), at least 1 lower case letter(s), 
+            at least 1 upper case letter(s), at least 1 special character(s) 
+            such as *, -, or #
           </div>
           <div>
             <label htmlFor="confirm-password" className="block text-sm font-medium text-gray-700">
