@@ -73,7 +73,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 text-center text-sm text-gray-600">
-          <Link href="#" className="text-gray-600 hover:text-primary">
+          <Link href="/terms" className="text-gray-600 hover:text-primary">
             Terms and Conditions
           </Link>
           <p>© 2023 AI Chatbot. All rights reserved.</p>
