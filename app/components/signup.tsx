@@ -90,10 +90,10 @@ export default function Signup() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-            />The password must have at least 8 characters, 
+            /><p className="text-red-500 text-sm">The password must have at least 8 characters, 
             at least 1 digit(s), at least 1 lower case letter(s), 
             at least 1 upper case letter(s), at least 1 special character(s) 
-            such as *, -, or #
+            such as *, -, or #</p>
           </div>
           <div>
             <label htmlFor="confirm-password" className="block text-sm font-medium text-gray-700">
