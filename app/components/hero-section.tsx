@@ -1,6 +1,5 @@
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import Image from "next/image";
+import { Button } from "@/components/ui/button"
+import Image from 'next/image'
 
 export default function HeroSection() {
   return (
@@ -13,15 +12,9 @@ export default function HeroSection() {
           <p className="text-xl mb-8">
             Boost customer engagement and automate support with our intelligent chatbot plugin.
           </p>
-          {/* Link added to ensure navigation to the Signup page */}
-          <Link href="/signup" passHref>
-            <Button
-              size="lg"
-              className="bg-white text-purple-600 hover:bg-gray-100 transition-colors"
-            >
-              Get Started Free
-            </Button>
-          </Link>
+          <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100 transition-colors">
+            Get Started Free
+          </Button>
         </div>
         <div className="md:w-1/2">
           <Image
@@ -34,5 +27,6 @@ export default function HeroSection() {
         </div>
       </div>
     </section>
-  );
+  )
 }
+
