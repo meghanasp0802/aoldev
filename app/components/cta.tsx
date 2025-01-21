@@ -10,11 +10,15 @@ export default function CTA() {
         <p className="text-xl mb-8">Start engaging your visitors with AI-powered conversations today.</p>
         <div className="space-x-4">
           <Link href='/signup'>
-            <Button size="lg" variant="secondary" className="text-black border-white hover:bg-white hover:text-purple-600">Get Started Free</Button>
+            <Button size="lg" variant="secondary" className="bg-white text-black  hover:bg-gray-100 transition-transform transform hover:text-purple-600 hover:scale-105 focus:scale-105">
+              Get Started Free
+            </Button>
           </Link>
-          <Button size="lg" variant="outline" className="text-black border-white hover:bg-white hover:text-purple-600">
-            Schedule a Demo
-          </Button>
+          <Link href='/signup'>
+            <Button size="lg" variant="outline" className="bg-white  text-black hover:bg-gray-100 transition-transform transform  hover:text-purple-600 hover:scale-105 focus:scale-105">
+              Schedule a Demo
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
