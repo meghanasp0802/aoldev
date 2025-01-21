@@ -18,7 +18,7 @@ export default function HeroSection() {
           className="bg-white text-purple-600 hover:bg-gray-100 transition-transform transform hover:scale-105 focus:scale-105">
              Get Started Free
           </Button>
-          </link>
+          </Link>
         </div>
         <div className="md:w-1/2">
           <Image
