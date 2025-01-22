@@ -22,7 +22,7 @@ export default function HeroSection() {
         </div>
         <div className="md:w-1/2">
           <Image
-            src="/placeholder.svg"
+            src="/robot-icon.svg"
             alt="AI Chatbot Interface"
             width={600}
             height={400}
