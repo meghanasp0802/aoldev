@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function HeroSection() {
   return (
-    <section className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-20">
+    <section id="HeroSection"  className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-20">
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 mb-8 md:mb-0">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
