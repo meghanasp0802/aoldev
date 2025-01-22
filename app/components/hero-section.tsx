@@ -20,11 +20,11 @@ export default function HeroSection() {
           </Button>
           </Link>
         </div>
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 p-10">
           <Image
             src="/placeholder.svg"
             alt="AI Chatbot Interface"
-            width={600}
+            width={500}
             height={400}
             className="rounded-lg shadow-lg"
           />
