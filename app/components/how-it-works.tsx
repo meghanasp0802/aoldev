@@ -11,12 +11,12 @@ export default function HowItWorks() {
     {
       title: "Connect to AI Models",
       description: "Choose from various advanced AI models to power your chatbot's intelligence.",
-      icon: <Bot className="w-10 h-10 text-purple-500" />,
+      icon: <Bot className="w-10 h-10  text-purple-500" />,
     },
     {
       title: "Engage Visitors",
       description: "Watch as the chatbot interacts with your visitors, providing real-time assistance.",
-      icon: <Globe className="w-10 h-10 text-purple-500" />,
+      icon: <Globe className="w-10 h-10  text-purple-500" />,
     },
   ]
 
@@ -37,7 +37,7 @@ export default function HowItWorks() {
                 <CardDescription>{step.description}</CardDescription>
               </CardContent>
               {index < steps.length - 1 && (
-                <ArrowRight className="absolute top-1/2 -right-4 w-8 h-8 text-purple-500 hidden md:block" />
+                <ArrowRight className="absolute top-1/2 -right-8 w-8 h-8 text-purple-500 hidden md:block" />
               )}
             </Card>
           ))}
