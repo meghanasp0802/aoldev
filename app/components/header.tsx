@@ -30,6 +30,7 @@ export default function Header() {
             }
           }, 500); // Adjust delay as needed
         }
+          
       }
     
   };
@@ -38,7 +39,7 @@ export default function Header() {
     <section id="header">
       <header className="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-90 backdrop-blur-sm">
         <nav className="container mx-auto px-6 py-3 flex justify-between items-center">
-          <Link href="/" onClick={(e) => handleScroll(e, "#header")} className="text-2xl font-bold text-primary">
+          <Link href="#hero-section" onClick={(e) => handleScroll(e, "#hero-section")} className="text-2xl font-bold text-primary">
             AI Chatbot
           </Link>
           <div className="space-x-4">
