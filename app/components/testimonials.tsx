@@ -7,19 +7,19 @@ export default function Testimonials() {
       name: "John Doe",
       company: "Tech Innovators Inc.",
       quote: "The AI chatbot has revolutionized our customer support. We've seen a 40% increase in customer satisfaction!",
-      image: "/placeholder.svg",
+      image: "/man.svg",
     },
     {
       name: "Jane Smith",
       company: "E-commerce Solutions",
       quote: "Implementing this chatbot was a game-changer for our online store. Sales have increased by 25% since we started using it.",
-      image: "/placeholder.svg",
+      image: "/man.svg",
     },
     {
       name: "Mike Johnson",
       company: "HealthTech Solutions",
       quote: "Our patients love the convenience of getting quick answers through the chatbot. It's improved our overall service quality.",
-      image: "/placeholder.svg",
+      image: "/man.svg",
     },
   ]
 
