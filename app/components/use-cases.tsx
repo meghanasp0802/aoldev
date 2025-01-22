@@ -6,22 +6,22 @@ export default function UseCases() {
     {
       title: "E-commerce",
       description: "Assist customers with product recommendations and order inquiries.",
-      image: "/placeholder.svg",
+      image: "/e commerce.svg",
     },
     {
       title: "Customer Service",
       description: "Provide 24/7 support and quickly resolve common issues.",
-      image: "/placeholder.svg",
+      image: "/customer.svg",
     },
     {
       title: "Healthcare",
       description: "Offer preliminary health assessments and appointment scheduling.",
-      image: "/placeholder.svg",
+      image: "/health.svg",
     },
     {
       title: "Education",
       description: "Support students with course information and study resources.",
-      image: "/placeholder.svg",
+      image: "/education.svg",
     },
   ]
 
