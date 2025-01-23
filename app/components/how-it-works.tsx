@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { ArrowRight, Bot, Zap, Globe } from 'lucide-react'
+import { ArrowRight, Bot, Zap, Globe, ArrowDown } from 'lucide-react'
 
 export default function HowItWorks() {
   const steps = [
@@ -37,8 +37,14 @@ export default function HowItWorks() {
                 <CardDescription>{step.description}</CardDescription>
               </CardContent>
               {index < steps.length - 1 && (
+                <>
+                {/* Arrow for larger screens */}
                 <ArrowRight className="absolute top-1/2 -right-8 w-8 h-8 text-purple-500 hidden md:block" />
-              )}
+          
+                {/* Arrow for smaller screens */}
+                <ArrowDown className="absolute left-1/2 -translate-x-1/2 top-full w-8 h-8 text-purple-500 block md:hidden" />
+                </>
+                 )}
             </Card>
           ))}
         </div>
