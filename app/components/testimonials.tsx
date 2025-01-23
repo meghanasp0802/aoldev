@@ -34,7 +34,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="flex flex-col h-full">
               <CardContent className="flex-grow">
-                <p className="italic mb-4">"{testimonial.quote}"</p>
+                <p className="italic m-5">"{testimonial.quote}"</p>
               </CardContent>
               <CardFooter className="flex items-center">
                 <Image
