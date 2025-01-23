@@ -47,7 +47,7 @@ export default function Pricing() {
         <h2 className="text-3xl font-bold text-center mb-12">Flexible Pricing Plans</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {plans.map((plan, index) => (
-            <Card key={index} className="flex flex-col">
+            <Card key={index} /*className="flex flex-col"*/ className="flex flex-col group relative transition-transform duration-300 hover:scale-105">
               <CardHeader>
                 <CardTitle>{plan.name}</CardTitle>
                 <CardDescription>{plan.description}</CardDescription>
