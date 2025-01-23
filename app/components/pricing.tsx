@@ -66,7 +66,7 @@ export default function Pricing() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Button className="w-full" onClick={() => plan.price === "Custom" ? window.location.href = "mailto:support@aichatbot.com" : window.location.href = "/signup"}>{plan.price === "Custom" ? "Contact Us" : "Get Started"}</Button>
+                <Button className="w-full font-bold" onClick={() => plan.price === "Custom" ? window.location.href = "mailto:support@aichatbot.com" : window.location.href = "/signup"}>{plan.price === "Custom" ? "Contact Us" : "Get Started"}</Button>
               </CardFooter>
             </Card>
           ))}

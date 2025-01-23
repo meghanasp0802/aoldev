@@ -47,7 +47,7 @@ export default function Demo() {
                 placeholder="Type your message..."
                 onKeyPress={(e) => e.key === 'Enter' && handleSend()}
               />
-              <Button onClick={handleSend}>Send</Button>
+              <Button className="font-bold" onClick={handleSend}>Send</Button>
             </div>
           </CardFooter>
         </Card>

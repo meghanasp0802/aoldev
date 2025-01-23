@@ -47,7 +47,7 @@ export default function Login() {
             <label htmlFor="password" className="block text-sm font-medium text-gray-700">
               Password
             </label>
-            <div className="relative">
+            <div className="relative font-bold">
               <Input
                 id="password"
                 type={showPassword ? 'text' : 'password'}
@@ -67,7 +67,7 @@ export default function Login() {
             </div>
           </div>
           {error && <p className="text-red-500 text-sm">{error}</p>}
-          <div className="flex flex-col space-y-2">
+          <div className="flex flex-col space-y-2 font-bold">
             <Button
               onClick={() => signIn('google')}
               type="button"
@@ -85,7 +85,7 @@ export default function Login() {
           </div>
         </CardContent>
         <CardFooter>
-          <Button type="submit" className="w-full">
+          <Button type="submit" className="w-full font-bold">
             Login
           </Button>
         </CardFooter>
