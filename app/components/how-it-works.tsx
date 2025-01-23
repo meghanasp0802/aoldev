@@ -26,7 +26,7 @@ export default function HowItWorks() {
         <h2 className="text-3xl font-bold text-center mb-12">How It Works</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {steps.map((step, index) => (
-            <Card key={index} className="relative">
+            <Card key={index} className="relative transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
               <CardHeader>
                 <CardTitle className="flex items-center">
                   {step.icon}
