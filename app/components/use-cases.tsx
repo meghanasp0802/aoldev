@@ -7,11 +7,13 @@ export default function UseCases() {
       title: "E-commerce",
       description: "Assist customers with product recommendations and order inquiries.",
       image: "/e commerce.svg",
+      alt:"E-com"
     },
     {
       title: "Customer Service",
       description: "Provide 24/7 support and quickly resolve common issues.",
       image: "/customer.svg",
+      alt:"Customer"
     },
     {
       title: "Healthcare",
@@ -22,6 +24,7 @@ export default function UseCases() {
       title: "Education",
       description: "Support students with course information and study resources.",
       image: "/education.svg",
+      alt:"Education"
     },
   ]
 

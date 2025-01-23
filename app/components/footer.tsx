@@ -77,7 +77,7 @@ export default function Footer() {
           <Link href="/terms" className="text-gray-600 hover:text-primary mb-2">
             Terms and Conditions
           </Link>
-          <p>© 2023 AI Chatbot. All rights reserved.</p>
+          <p>© 2025 AI Chatbot. All rights reserved.</p>
         </div>
       </div>
     </footer>
