@@ -36,7 +36,7 @@ export default function Header() {
   return (
     <section id="header">
       <header className="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-90 backdrop-blur-sm shadow-md">
-        <nav className="container mx-auto px-6 py-4 flex justify-between items-center font-bold">
+        <nav className="container mx-auto px-6 py-4 flex justify-between items-center font-normal">
 
           <Link
             href="#HeroSection"
@@ -51,20 +51,20 @@ export default function Header() {
             <Link
               href="#features"
               onClick={(e) => handleScroll(e, '#features')}
-              className="text-gray-600 hover:text-primary transition-colors hover:scale-105"
+              className="text-black-600 hover:text-primary transition-colors hover:scale-105"
             >
               Features
             </Link>
             <Link
               href="#pricing"
               onClick={(e) => handleScroll(e, '#pricing')}
-              className="text-gray-600 hover:text-primary transition-colors hover:scale-105"
+              className="text-black-600 hover:text-primary transition-colors hover:scale-105"
             >
               Pricing
             </Link>
             {session ? (
               <>
-                <span className="text-gray-600">Welcome, {session.user?.email}</span>
+                <span className="text-black-600">Welcome, {session.user?.email}</span>
                 <Button
                   onClick={logout}
                   variant="outline"

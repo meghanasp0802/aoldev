@@ -15,7 +15,7 @@ export default function HeroSection() {
           </p>
           <Link href='/signup'>
          <Button size="lg"
-          className="bg-white text-purple-600 hover:bg-gray-100 transition-transform transform hover:scale-105 focus:scale-105 font-bold">
+          className="bg-white  text-purple-600 hover:bg-white-100 transition-transform transform hover:scale-105 focus:scale-105 font-bold">
              Get Started Free
           </Button>
           </Link>
