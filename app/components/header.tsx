@@ -62,6 +62,12 @@ export default function Header() {
             >
               Pricing
             </Link>
+            <Link
+              href="/careers"
+              className="text-gray-600 hover:text-primary transition-colors hover:scale-105"
+            >
+              Careers
+            </Link>
             {session ? (
               <>
                 <span className="text-gray-600">Welcome, {session.user?.email}</span>
@@ -123,6 +129,12 @@ export default function Header() {
                 className="text-gray-600 hover:text-primary transition-colors"
               >
                 Pricing
+              </Link>
+              <Link
+                href="/careers"
+                className="text-gray-600 hover:text-primary transition-colors"
+              >
+                Careers
               </Link>
               {session ? (
                 <>
