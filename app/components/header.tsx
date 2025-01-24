@@ -36,7 +36,7 @@ export default function Header() {
   return (
     <section id="header">
       <header className="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-90 backdrop-blur-sm shadow-md">
-        <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
+        <nav className="container mx-auto px-6 py-4 flex justify-between items-center font-normal">
 
           <Link
             href="#HeroSection"
@@ -51,14 +51,14 @@ export default function Header() {
             <Link
               href="#features"
               onClick={(e) => handleScroll(e, '#features')}
-              className="text-gray-600 hover:text-primary transition-colors hover:scale-105"
+              className="text-black-600 hover:text-primary transition-colors hover:scale-105"
             >
               Features
             </Link>
             <Link
               href="#pricing"
               onClick={(e) => handleScroll(e, '#pricing')}
-              className="text-gray-600 hover:text-primary transition-colors hover:scale-105"
+              className="text-black-600 hover:text-primary transition-colors hover:scale-105"
             >
               Pricing
             </Link>
@@ -70,7 +70,7 @@ export default function Header() {
             </Link>
             {session ? (
               <>
-                <span className="text-gray-600">Welcome, {session.user?.email}</span>
+                <span className="text-black-600">Welcome, {session.user?.email}</span>
                 <Button
                   onClick={logout}
                   variant="outline"
@@ -109,7 +109,7 @@ export default function Header() {
 
         {menuOpen && (
           <div className="md:hidden bg-white border-t border-gray-200 shadow-md">
-            <div className="flex flex-col items-center space-y-4 py-4">
+            <div className="flex flex-col items-center space-y-4 py-4 font-bold">
               <Link
                 href="#features"
                 onClick={(e) => {
@@ -145,7 +145,7 @@ export default function Header() {
                       setMenuOpen(false)
                     }}
                     variant="outline"
-                    className="hover:bg-gray-200 hover:border-gray-400"
+                    className="hover:bg-gray-200 hover:border-gray-400 font-bold"
                   >
                     Log Out
                   </Button>
@@ -155,7 +155,7 @@ export default function Header() {
                   <Link href="/login">
                     <Button
                       variant="outline"
-                      className="hover:bg-gray-200 hover:border-gray-400"
+                      className="hover:bg-gray-200 hover:border-gray-400 font-bold"
                       onClick={() => setMenuOpen(false)}
                     >
                       Log In
@@ -163,7 +163,7 @@ export default function Header() {
                   </Link>
                   <Link href="/signup">
                     <Button
-                      className="hover:bg-primary hover:text-white"
+                      className="hover:bg-primary hover:text-white font-bold"
                       onClick={() => setMenuOpen(false)}
                     >
                       Sign Up

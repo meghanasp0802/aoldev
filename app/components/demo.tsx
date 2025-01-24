@@ -95,9 +95,13 @@ export default function Demo() {
                 onKeyPress={(e) => e.key === 'Enter' && handleSend()}
                 disabled={loading}
               />
+
+              <Button className="font-bold" onClick={handleSend}>Send</Button>
+
               <Button onClick={handleSend} disabled={loading}>
                 {loading ? 'Sending...' : 'Send'}
               </Button>
+
             </div>
           </CardFooter>
         </Card>

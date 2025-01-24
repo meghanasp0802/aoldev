@@ -11,7 +11,7 @@ export default function CTA() {
         <p className="text-lg md:text-xl mb-6 md:mb-8">
           Start engaging your visitors with AI-powered conversations today.
         </p>
-        <div className="flex flex-col md:flex-row justify-center items-center md:space-x-4 space-y-4 md:space-y-0">
+        <div className="flex flex-col md:flex-row justify-center items-center md:space-x-4 space-y-4 md:space-y-0 font-normal">
           <Link href="/signup">
             <Button
               size="lg"

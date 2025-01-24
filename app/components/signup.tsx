@@ -58,7 +58,7 @@ export default function Signup() {
             <label htmlFor="password" className="block text-sm font-medium text-gray-700">
               Password
             </label>
-            <div className="relative">
+            <div className="relative font-bold">
               <Input
                 id="password"
                 type={showPassword ? 'text' : 'password'}
@@ -81,7 +81,7 @@ export default function Signup() {
             <label htmlFor="confirm-password" className="block text-sm font-medium text-gray-700">
               Confirm Password
             </label>
-            <div className="relative">
+            <div className="relative font-bold">
               <Input
                 id="confirm-password"
                 type={showConfirmPassword ? 'text' : 'password'}
@@ -101,7 +101,7 @@ export default function Signup() {
             </div>
           </div>
           {error && <p className="text-red-500 text-sm">{error}</p>}
-          <div className="flex flex-col space-y-2">
+          <div className="flex flex-col space-y-2 font-bold">
             <Button onClick={() => signIn('google')} type="button" className="w-full flex items-center justify-center bg-red-500 hover:bg-red-600 text-white font-semibold py-2 rounded-md">
               <FaGoogle className="mr-2" /> Sign up with Google
             </Button>
@@ -111,7 +111,7 @@ export default function Signup() {
           </div>
         </CardContent>
         <CardFooter>
-          <Button type="submit" className="w-full">
+          <Button type="submit" className="w-full font-bold">
             Sign Up
           </Button>
         </CardFooter>
