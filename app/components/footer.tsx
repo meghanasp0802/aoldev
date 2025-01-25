@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from 'next/image';
 
 export default function Footer() {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
@@ -78,14 +77,9 @@ export default function Footer() {
           <Link href="/terms" className="text-gray-600 hover:text-primary mb-2">
             Terms and Conditions
           </Link>
-          <footer className="flex items-center space-x-2 p-4 border-t">
-  <Image src="/robot-icon.svg" alt="Logo" width={25} height={25} />
-  <p className="text-sm">&copy; 2025 AI Chatbot. All rights reserved.</p>
-</footer>
-
+          <p>© 2025 AI Chatbot. All rights reserved.</p>
         </div>
       </div>
     </footer>
   );
 }
-
