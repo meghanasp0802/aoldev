@@ -5,6 +5,8 @@ import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { useAuth } from '../hooks/useAuth'
 import { FaBars, FaTimes } from 'react-icons/fa'
+import Image from 'next/image';
+
 
 export default function Header() {
   const { session, logout } = useAuth()
@@ -43,7 +45,11 @@ export default function Header() {
             onClick={(e) => handleScroll(e, '#HeroSection')}
             className="text-2xl font-bold text-primary"
           >
-            AI Chatbot
+            <header className="flex items-center space-x-2 p-4">
+            <Image src="/robot-icon.svg" alt="Logo" width={30} height={30} />
+           <h1 className="text-xl font-bold">AI Chatbot</h1>
+            </header>
+ 
           </Link>
 
 
@@ -178,3 +184,4 @@ export default function Header() {
     </section>
   )
 }
+
